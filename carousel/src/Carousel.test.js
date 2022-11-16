@@ -77,13 +77,14 @@ it("right arrow is hidden on last image", function() {
 /*************************** LEFT ARROW  *************************/
 
 it("works when you click on the left arrow", function() {
-  const { container } = render(
+  const { container, debug } = render(
     <Carousel
       photos={TEST_IMAGES}
       title="images for testing"
     />
   );
 
+  debug(container);
   //click right arrow to get to 2nd image
   const rightArrow = container.querySelector(".bi-arrow-right-circle");
   const leftArrow = container.querySelector(".bi-arrow-left-circle");

@@ -62,10 +62,10 @@ it("right arrow is hidden on last image", function() {
   const rightArrow = container.querySelector(".bi-arrow-right-circle")
 
   //iterate through length of images to get to last image
+  //TODO: Just click twice - since we know how many images
   let iterator = photos.length;
-  while(iterator !== 0) {
+  while(--iterator) {  //will automatically decrement until zero (falsy)
     fireEvent.click(rightArrow);
-    iterator--;
   }
   // expect, on the last image, that the right arrow is hidden
   expect(

@@ -14,10 +14,10 @@
   color: black;
 }
 
-.bi {
+.Carousel-main .bi {
   font-size: 35px
 }
 
-.hidden {
+.Carousel-main .hidden {
   display: none;
 }
